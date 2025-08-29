@@ -1,0 +1,13 @@
+@for (item of products; track $index) {
+  <div class="product">
+    <h2>{{ item.name }}</h2>
+    <p>Precio: {{ item.price }}</p>
+
+    <!-- <button [routerLink]="['/products', item.id]">Ver Detalle</button> -->
+
+    <button (click)="navegar(item.id)">detalle</button>
+  </div>
+}
+
+<router-outlet></router-outlet>
+

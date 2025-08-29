@@ -1,0 +1,20 @@
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+
+    a {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+
+        &:hover {
+            background-color: darken(#333, 10%);
+        }
+    }
+}
+
+.active {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
