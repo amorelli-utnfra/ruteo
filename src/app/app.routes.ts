@@ -23,19 +23,24 @@ export const routes: Routes = [
         path: 'products',
         component: ProductsComponent,
         children: [
-            // {
-            //     path: ':id',
-            //     component: DetalleComponent
-            // },
             {
                 path: 'detalle',
                 component: DetalleComponent
-            }
+            },
+            {
+                path: ':id',
+                component: DetalleComponent
+            },
+            // {
+            //     path: 'detalle',
+            //     component: DetalleComponent
+            // }
         ]
     },
     {
         path: '**',
         component: ErrorComponent
     },
+
 
 ];
